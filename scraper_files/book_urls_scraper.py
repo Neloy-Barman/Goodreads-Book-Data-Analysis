@@ -10,16 +10,17 @@ def main():
     # base_url = "https://www.goodreads.com/list/show/264.Books_That_Everyone_Should_Read_At_Least_Once"
     # base_url = "https://www.goodreads.com/list/show/1043.Books_That_Should_Be_Made_Into_Movies"
     # base_url = "https://www.goodreads.com/list/show/1.Best_Books_Ever"
-    base_url = "https://www.goodreads.com/list/show/94.Books_With_Unforgettable_Characters"
+    # base_url = "https://www.goodreads.com/list/show/94.Books_With_Unforgettable_Characters"
+    base_url = "https://www.goodreads.com/list/show/19106.MUST_READS_"
 
     driver = webdriver.Chrome()
     
-    df = pd.read_csv("book_urls.csv")
+    df = pd.read_csv("url_files/book_urls.csv")
 
     titles = df['title'].to_list()
     urls = df['urls'].to_list()
 
-    for page_no in tqdm(range(74)):
+    for page_no in tqdm(range(100)):
         url = f"{base_url}?page={page_no+1}" 
         driver.get(url=url)
         table = driver.find_element(by=By.XPATH, value="//table[@class='tableList js-dataTooltip']")
@@ -42,7 +43,7 @@ def main():
                 continue
 
         df = pd.DataFrame(columns=columns, data=book_urls)
-        df.to_csv("book_urls_unforgettable_characters.csv", index=False)
+        df.to_csv("book_urls_must_reads.csv", index=False)
 
 if __name__ == "__main__":
     main()

@@ -12,7 +12,7 @@ def main():
 
     driver = webdriver.Chrome()
     
-    df = pd.read_csv("url_files/book_urls_unforgettable_characters.csv")
+    df = pd.read_csv("url_files/book_urls_must_reads.csv")
 
     urls = df['urls'].to_list()
     
@@ -120,7 +120,7 @@ def main():
         # print(book_details)
 
         df = pd.DataFrame(columns=columns, data=book_details)
-        df.to_csv("books_details_files/book_details_unforgettable_characters.csv", index=False)
+        df.to_csv("books_details_files/book_details_must_reads.csv", index=False)
         
 if __name__ == "__main__":
     main()
