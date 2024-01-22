@@ -10,10 +10,17 @@
 
 <h3><code style="color:blue"><a href="https://public.tableau.com/app/profile/neloy.barman/viz/GoodreadsBookDataAnalysis/author__book_data">Analysis</a> Requirements Blueprint</code></h3>
 
-* <strong>Find the average ratings and the number of books for each author based on the book data. Who is the top-rated author and who has published most books?</strong> 
-* <strong>Books with the most number of reviews and average ratings.</strong>
-* <strong>Find out the relationship of number of reviews with both the average ratings and the total number of ratings.</strong>
-* <strong>Plot a relationship of the average ratings with the number of 5 star, 4 star and 2 star reviews.</strong>
+* <strong>Find the average ratings for each author based on the book data.(Top 5)</strong>
+* <strong>Find the number of books written by an author.(Top 5)</strong> 
+* <strong>Find out the top 5 most rated books.</strong>
+* <strong>Find out the top 5 books with most number of ratings.</strong>
+* <strong>Find out the top 5 books with most number of reviews.</strong>
+* <strong>Plot a relationship between the total no. of reviews and avg ratings as well as total no. of ratings.</strong>
+* <strong>Do the total number of 5 star, 4 star and 2 star ratings create an impact to get the book a descent avg. ratings? Do they have any graphical relationship?</strong>
+* <strong>In which number of genres, the avg. ratings and no. of reviews are mostly populated?</strong>
+* <strong>Find if there exists any relationship between descriptions word count and avg. ratings and no. of reviews.</strong>
+
+
 
 <h3><code style="color:blue">DashBoard</code></h3>
 <strong>You can find all the analysis within this <a href="https://public.tableau.com/app/profile/neloy.barman/viz/GoodreadsBookDataAnalysis/author__book_data">Tableau DashBoard</a></strong>
@@ -189,3 +196,21 @@
 
 <h4>ii. Different Kinds of Relationships Findings</h4>
 <img src="readmeFileImages/dashboard_2.png">
+<ul>
+    <li>
+        <strong>Reviews vs Avg. Ratings and Total No. of Ratings</strong></br>
+        <strong>I plotted a relationship between the total number of reviews for a book with it's average ratings and total number of ratings given by the readers. The main goal here was to find out if any kind of dependency on each other exists that may result in increasing or decreasing values. In the case of reviews vs avg. ratings, the most avg. rated book "A Song to Drown River" with 4.92 value has only 46 reviews whereas the lowest one "Revealing Eden" with 2.00 value has 375 reviews. The book with most number of reviews is "Los siete maridos de Evelyn Hugo" and it's average ratings is 4.43. Proceeding to reviews vs no. of ratings plot, we could have expected a relationship but the values got scattered. Here the book with most number of ratings is "Harry Potter and the Sorcerer's Stone" with a value of 9699750 has 156453 reviews. The lowest one here has 9 ratings and 1 reviews. So, there is no dependent relationship between any of these variables.</strong>
+    </li>
+    <li>
+        <strong>Descriptions Word vs Avg. Ratings and No. of Reviews</strong></br>
+        <strong>Different descriptions have different word counts. So, I plotted the words count and wanted to see if any dependency occurs with avg. ratings and total reviews. Looking at average ratings, some points may show relation. But the overall situation shows nothing. In the case of plot with total reviews, the book with 1201 descriptive words has only 358 reviews whereas the one with 199 words got 248179 reviews. The lowest word count I got is only 1. So, there is no relationship in between those both practical and hypothetical variables.</strong>
+    </li>
+    <li>
+        <strong>Genre Count vs Avg. Ratings and No. of Reviews</strong></br>
+        <strong>In the website, a book falls within multiple genres. So, I tried to figure out in which area, the average ratings and reviews mostly depend. In the case of average ratings, the darker regions are mostly closer to 4.00 value. Looking at Y-axis, the books that are categorized between 12 and 14 closer values, fall within the darker areas. Going to the number of reivews case, in the same way 12-14 closer values categoried books get a descent amount of reviews. So, we can conclude saying people are interested in books that contains writings relatable to 12-14 genres. </strong>
+    </li>
+    <li>
+        <strong>Avg. Ratings vs Total 5, 4 & 2 Star Ratings</strong></br>
+        <strong>To see the effects of total 5, 4 and 3 star ratings in final average ratings I created a plot. It doesn't seem to have any identical relationship. But more the upper ratings value a book has, the more it gets closer to a good ratings. Such as "Harry Potter and the Sorcerer's Stone" and "Harry Potter and the Philosopher's Stone" both have descent a amount of 5 star and 4 star ratings that results in getting an average ratings of 4.43. </strong>
+    </li>
+</ul>
