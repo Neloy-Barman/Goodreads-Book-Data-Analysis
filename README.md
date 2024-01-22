@@ -1,6 +1,5 @@
 # Goodreads Book Data Analysis
 
-
 <h3><code style="color:blue"><a >Analysis</a> Requirements Blueprint</code></h3>
 
 * <strong>Find the average ratings and the number of books for each author based on the book data. Who is the top-rated author and who has published most books?</strong> 
